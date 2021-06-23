@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NUT Climbing Brushes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="woods__btn">Open Woods</button>
+    <div class="overlay"></div>
+    <div class="modal" id="woods">
+      <div class="modal__title">
+        <h2>Wood</h2>
+        <button data-close-button>&times;</button>
+      </div>
+      <div class="modal__img" id="wood__img"></div>
+      <div class="modal__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quae,
+          culpa vero tempora blanditiis veritatis harum nisi et dolorum officiis
+          provident sint non tempore enim accusantium nam quasi a sequi?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quae,
+          culpa vero tempora blanditiis veritatis harum nisi et dolorum officiis
+          provident sint non tempore enim accusantium nam quasi a sequi?
+        </p>
+      </div>
+      <div class="modal__options">
+        <button id="palissandro">Palissandro Santos</button>
+        <button id="ebano">Ebano Africano</button>
+        <button id="padouk">Padouk</button>
+        <button id="pao">Pao Rosa</button>
+        <button id="amaranto">Amaranto</button>
+        <button id="zebrano">Zebrano</button>
+        <button id="wenge">Wengè</button>
+        <button id="ziricote">Ziricote</button>
+        <button id="palma">Palma</button>
+        <button id="ulivo">Ulivo</button>
+      </div>
+    </div>
+
+    <!-- <script src="app.js"></script> -->
+    <script>
+      // Modal opening and closing
+      const openModalBtn = document.getElementById("woods__btn");
+      const woodsModal = document.getElementById("woods");
+      const closeModalBtn = document.querySelector("[data-close-button]");
+      const overlay = document.querySelector(".overlay");
+
+      openModalBtn.addEventListener("click", () => {
+        openModal(woodsModal);
+      });
+
+      closeModalBtn.addEventListener("click", (e) => {
+        const modal = e.target.closest(".modal");
+        closeModal(modal);
+      });
+
+      overlay.addEventListener("click", () => {
+        const modals = document.querySelectorAll(".modal.active");
+        modals.forEach((modal) => {
+          closeModal(modal);
+        });
+      });
+
+      // Open modal
+      function openModal(modal) {
+        if (modal == null) return;
+        overlay.classList.add("active");
+        modal.classList.add("active");
+      }
+
+      // Close modal
+      function closeModal(modal) {
+        if (modal == null) return;
+        modal.classList.remove("active");
+        overlay.classList.remove("active");
+      }
+    </script>
+    <script>
+      // Change selection of woods btns
+      const modalTitle = document.querySelector(".modal__title h2");
+      const modalImage = document.getElementById("wood__img");
+      const modalText = document.querySelector(".modal__text");
+
+      // palissandro
+      const palissandroBtn = document.getElementById("palissandro");
+      palissandroBtn.addEventListener("click", (e) => {
+        let activeBtns = document.querySelectorAll(".modal__options .active");
+        activeBtns.forEach((button) => button.classList.remove("active"));
+        palissandroBtn.classList.add("active");
+        modalTitle.textContent = "Palissandro Santos";
+        modalText.innerHTML =
+          "<p>Palissandro is a very light wood bla bla bla</p>";
+        modalImage.style.backgroundImage =
+          "url(./images/wood_types/palissandro.jpeg)";
+      });
+
+      // ebano
+      const ebanoBtn = document.getElementById("ebano");
+      ebanoBtn.addEventListener("click", (e) => {
+        let activeBtns = document.querySelectorAll(".modal__options .active");
+        activeBtns.forEach((button) => button.classList.remove("active"));
+        ebanoBtn.classList.add("active");
+        modalTitle.textContent = "Ebano Africano";
+        modalText.innerHTML = "<p>Ebony is a very dark wood bla bla bla</p>";
+        modalImage.style.backgroundImage =
+          "url(./images/wood_types/ebony.jpeg)";
+      });
+
+      // Padouk
+      const padoukBtn = document.getElementById("padouk");
+      padoukBtn.addEventListener("click", (e) => {
+        let activeBtns = document.querySelectorAll(".modal__options .active");
+        activeBtns.forEach((button) => button.classList.remove("active"));
+        padoukBtn.classList.add("active");
+        modalTitle.textContent = "Padouk";
+        modalText.innerHTML = "<p>Padouk is a very amber wood bla bla bla</p>";
+        modalImage.style.backgroundImage =
+          "url(./images/wood_types/padouk.jpeg)";
+      });
+
+      // Pao Rosa
+      const paoBtn = document.getElementById("pao");
+      paoBtn.addEventListener("click", (e) => {
+        let activeBtns = document.querySelectorAll(".modal__options .active");
+        activeBtns.forEach((button) => button.classList.remove("active"));
+        paoBtn.classList.add("active");
+        modalTitle.textContent = "Pao Rosa";
+        modalText.innerHTML =
+          "<p>Pao Rosa is a very pinky wood bla bla bla</p>";
+        modalImage.style.backgroundImage =
+          "url(./images/wood_types/pao-rosa.jpeg)";
+      });
+
+      // Amaranto
+      const amarantoBtn = document.getElementById("amaranto");
+      amarantoBtn.addEventListener("click", (e) => {
+        let activeBtns = document.querySelectorAll(".modal__options .active");
+        activeBtns.forEach((button) => button.classList.remove("active"));
+        amarantoBtn.classList.add("active");
+        modalTitle.textContent = "Amaranto";
+        modalText.innerHTML = "<p>Amaranto is a red wood bla bla bla</p>";
+        modalImage.style.backgroundImage =
+          "url(./images/wood_types/amaranto.jpeg)";
+      });
+
+      // Zebrano
+      const zebranoBtn = document.getElementById("zebrano");
+      zebranoBtn.addEventListener("click", (e) => {
+        let activeBtns = document.querySelectorAll(".modal__options .active");
+        activeBtns.forEach((button) => button.classList.remove("active"));
+        zebranoBtn.classList.add("active");
+        modalTitle.textContent = "Zebrano";
+        modalText.innerHTML = "<p>Zebrano is a red wood bla bla bla</p>";
+        modalImage.style.backgroundImage =
+          "url(./images/wood_types/zebrano.jpeg)";
+      });
+
+      // Wengè
+      const wengeBtn = document.getElementById("wenge");
+      wengeBtn.addEventListener("click", (e) => {
+        let activeBtns = document.querySelectorAll(".modal__options .active");
+        activeBtns.forEach((button) => button.classList.remove("active"));
+        wengeBtn.classList.add("active");
+        modalTitle.textContent = "Wengè";
+        modalText.innerHTML = "<p>Wengè is a red wood bla bla bla</p>";
+        modalImage.style.backgroundImage =
+          "url(./images/wood_types/wenge.jpeg)";
+      });
+
+      // Ziricote
+      const ziricoteBtn = document.getElementById("ziricote");
+      ziricoteBtn.addEventListener("click", (e) => {
+        let activeBtns = document.querySelectorAll(".modal__options .active");
+        activeBtns.forEach((button) => button.classList.remove("active"));
+        ziricoteBtn.classList.add("active");
+        modalTitle.textContent = "Ziricote";
+        modalText.innerHTML = "<p>Ziricote is a red wood bla bla bla</p>";
+        modalImage.style.backgroundImage =
+          "url(./images/wood_types/ziricote.jpeg)";
+      });
+
+      // Palma
+      const palmaBtn = document.getElementById("palma");
+      palmaBtn.addEventListener("click", (e) => {
+        let activeBtns = document.querySelectorAll(".modal__options .active");
+        activeBtns.forEach((button) => button.classList.remove("active"));
+        palmaBtn.classList.add("active");
+        modalTitle.textContent = "Palma";
+        modalText.innerHTML = "<p>Palma is a red wood bla bla bla</p>";
+        modalImage.style.backgroundImage =
+          "url(./images/wood_types/palma.jpeg)";
+      });
+
+      // Ulivo
+      const ulivoBtn = document.getElementById("ulivo");
+      ulivoBtn.addEventListener("click", (e) => {
+        let activeBtns = document.querySelectorAll(".modal__options .active");
+        activeBtns.forEach((button) => button.classList.remove("active"));
+        ulivoBtn.classList.add("active");
+        modalTitle.textContent = "Ulivo";
+        modalText.innerHTML = "<p>Ulivo is a red wood bla bla bla</p>";
+        modalImage.style.backgroundImage =
+          "url(./images/wood_types/ulivo.jpeg)";
+      });
+    </script>
+  </body>
+</html>
