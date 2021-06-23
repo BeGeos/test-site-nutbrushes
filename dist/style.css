@@ -74,7 +74,7 @@ li {
 .upper-logo {
   height: 180px;
   max-width: 100%;
-  background-image: url("http://nutbrushes.com/assets/img/main-banner-006.jpg");
+  background-image: url("../dist/images/main-banner-006.jpeg");
   background-position: 100% 100%;
   background-size: cover;
   display: flex;
