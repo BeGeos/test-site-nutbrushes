@@ -352,3 +352,28 @@ navBtns.forEach((btn) => {
 //   modalText.innerHTML = "<p>Ulivo is a red wood bla bla bla</p>";
 //   modalImage.style.backgroundImage = "url(./images/wood_types/ulivo.jpeg)";
 // });
+
+// LAzy loading with Intersection Observer
+let options = {
+  root: null,
+  rootMargin: "80px",
+  threshold: 0.2,
+};
+
+let observer = new IntersectionObserver(showSection, options);
+
+function showSection(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      //console.log(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+document.querySelectorAll("[data-load]").forEach((section) => {
+  if (section) {
+    observer.observe(section);
+  }
+});

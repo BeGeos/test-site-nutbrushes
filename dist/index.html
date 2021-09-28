@@ -326,34 +326,33 @@
         <section class="mid-section">
           <div class="section__overlay"></div>
           <div class="text__container">
-            <div class="infra__text">
-              <p id="first" class="visible">
+            <div class="slider">
+              <div id="first">
                 All our brushes are entirely handmade, starting from premium
                 100% boar bristles and a selection of the finest certified wood
                 from all over the world. <br />
                 No paint is used, what you see is the natural wood color!.
-              </p>
-              <p id="second">
-                All our brushes are entirely handmade, starting from premium
-                100% boar bristles and a selection of the finest certified wood
-                from all over the world. <br />
+              </div>
+              <div id="second">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                libero officia ex <br />
                 No paint is used, what you see is the natural wood color!.
-              </p>
-              <p id="third">
+              </div>
+              <div id="third">
                 All our brushes are entirely handmade, starting from premium
                 100% No paint is used, what you see is the natural wood color!.
-              </p>
-              <div class="nav-buttons">
-                <button class="nav-text active" dataset="first"></button>
-                <button class="nav-text" dataset="second"></button>
-                <button class="nav-text" dataset="third"></button>
               </div>
             </div>
+          </div>
+          <div class="nav-buttons">
+            <button class="nav-text active" dataset="first"></button>
+            <button class="nav-text" dataset="second"></button>
+            <button class="nav-text" dataset="third"></button>
           </div>
         </section>
 
         <!-- Product section-->
-        <section id="products">
+        <section id="products" data-load="lazy">
           <div class="section__title products">
             <h2>Products</h2>
             <!-- <button id="woods__btn">Our woods</button> -->
@@ -362,13 +361,13 @@
             <div class="product__card">
               <div class="card__title">
                 <h4>Mello</h4>
-                <button data-modal-target="#mello-modal">
+                <!-- <button data-modal-target="#mello-modal">
                   <span
                     ><img src="./images/caret-down.svg" alt="open-colors"
                   /></span>
-                </button>
+                </button> -->
               </div>
-              <div class="nut__options" id="mello-modal">
+              <!-- <div class="nut__options" id="mello-modal">
                 <button id="mello__blue">
                   <img
                     src="./images/nut_colors/blueNut.jpeg"
@@ -414,7 +413,7 @@
                 <button id="mello__red">
                   <img src="./images/nut_colors/redNut.jpeg" alt="red-brush" />
                 </button>
-              </div>
+              </div> -->
 
               <p>
                 Our first model! ergonomic and balanced, ideal for small chalk
@@ -438,13 +437,13 @@
             <div class="product__card">
               <div class="card__title">
                 <h4>Albarra</h4>
-                <button data-modal-target="#albarra-modal">
+                <!-- <button data-modal-target="#albarra-modal">
                   <span
                     ><img src="./images/caret-down.svg" alt="open-colors"
                   /></span>
-                </button>
+                </button> -->
               </div>
-              <div class="nut__options" id="albarra-modal">
+              <!-- <div class="nut__options" id="albarra-modal">
                 <button id="albarra__blue">
                   <img
                     src="./images/nut_colors/blueNut.jpeg"
@@ -490,7 +489,7 @@
                 <button id="albarra__red">
                   <img src="./images/nut_colors/redNut.jpeg" alt="red-brush" />
                 </button>
-              </div>
+              </div> -->
 
               <p>
                 our first model! ergonomic and balanced, ideal for small chalk
@@ -509,13 +508,13 @@
             <div class="product__card">
               <div class="card__title">
                 <h4>Magic</h4>
-                <button data-modal-target="#magic-modal">
+                <!-- <button data-modal-target="#magic-modal">
                   <span
                     ><img src="./images/caret-down.svg" alt="open-colors"
                   /></span>
-                </button>
+                </button> -->
               </div>
-              <div class="nut__options" id="magic-modal">
+              <!-- <div class="nut__options" id="magic-modal">
                 <button id="albarra__blue">
                   <img
                     src="./images/nut_colors/blueNut.jpeg"
@@ -561,7 +560,7 @@
                 <button id="albarra__red">
                   <img src="./images/nut_colors/redNut.jpeg" alt="red-brush" />
                 </button>
-              </div>
+              </div> -->
 
               <p>
                 our first model! ergonomic and balanced, ideal for small chalk
@@ -580,13 +579,13 @@
             <div class="product__card">
               <div class="card__title">
                 <h4>Font</h4>
-                <button data-modal-target="#font-modal">
+                <!-- <button data-modal-target="#font-modal">
                   <span
                     ><img src="./images/caret-down.svg" alt="open-colors"
                   /></span>
-                </button>
+                </button> -->
               </div>
-              <div class="nut__options" id="font-modal">
+              <!-- <div class="nut__options" id="font-modal">
                 <button id="fontBrush">
                   <div class="tooltip__text">Original</div>
                   <img
@@ -639,7 +638,7 @@
                     alt="purple-brush"
                   />
                 </button>
-              </div>
+              </div> -->
 
               <p>
                 our first model! ergonomic and balanced, ideal for small chalk
@@ -657,7 +656,7 @@
             </div>
           </div>
         </section>
-        <section class="section__sponsor">
+        <section class="section__sponsor" data-load="lazy">
           <div class="sponsor__title">
             <h2>NutBrushers</h2>
             <!-- <span>a.k.a NutBrusher</span> -->
@@ -759,16 +758,18 @@
                     <div class="mobile__stats">
                       <div class="sponsor__activity">
                         <p>Lead</p>
-
-                        <progress value="95" max="100"></progress>
+                        <p>World Champion</p>
+                        <!-- <progress value="80" max="100"></progress> -->
                       </div>
                       <div class="sponsor__activity">
                         <p>Boulder</p>
-                        <progress value="75" max="100"></progress>
+                        <!-- <progress value="75" max="100"></progress> -->
+                        <p>World Champion</p>
                       </div>
                       <div class="sponsor__activity">
                         <p>Rock Climbing</p>
-                        <progress value="100" max="100"></progress>
+                        <p>9A+ Grandi Gesti</p>
+                        <!-- <progress value="90" max="100"></progress> -->
                       </div>
                     </div>
                     <div class="sponsor__social">
@@ -977,16 +978,18 @@
                     <div class="mobile__stats">
                       <div class="sponsor__activity">
                         <p>Lead</p>
-
-                        <progress value="80" max="100"></progress>
+                        <p>World Champion</p>
+                        <!-- <progress value="80" max="100"></progress> -->
                       </div>
                       <div class="sponsor__activity">
                         <p>Boulder</p>
-                        <progress value="75" max="100"></progress>
+                        <!-- <progress value="75" max="100"></progress> -->
+                        <p>World Champion</p>
                       </div>
                       <div class="sponsor__activity">
                         <p>Rock Climbing</p>
-                        <progress value="90" max="100"></progress>
+                        <p>9A+ Grandi Gesti</p>
+                        <!-- <progress value="90" max="100"></progress> -->
                       </div>
                     </div>
                     <div class="sponsor__social">
@@ -1052,7 +1055,7 @@
         </section>
 
         <!--Contacts section-->
-        <section id="contacts">
+        <section id="contacts" data-load="lazy">
           <div class="section__title">
             <h2>Contacts</h2>
           </div>
