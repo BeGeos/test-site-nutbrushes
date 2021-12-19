@@ -12,15 +12,15 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="it">
     <div class="container">
       <div class="SVG-illustration"></div>
       <!-- Upper part of the page  -->
       <div class="upper-logo">
         <div class="language">
           <div class="language__options">
-            <button class="active">EN</button>
-            <button>IT</button>
+            <button id="english">EN</button>
+            <button class="active" id="italian">IT</button>
           </div>
         </div>
 
@@ -46,9 +46,12 @@
           <div class="nav__links">
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#products">Products</a></li>
-              <li><a href="#contacts">Contacts</a></li>
+              <li lang="en"><a href="#about">About</a></li>
+              <li lang="en"><a href="#products">Products</a></li>
+              <li lang="en"><a href="#contacts">Contacts</a></li>
+              <li lang="it"><a href="#about">Chi siamo</a></li>
+              <li lang="it"><a href="#products">Prodotti</a></li>
+              <li lang="it"><a href="#contacts">Contatti</a></li>
             </ul>
           </div>
         </div>
@@ -57,233 +60,17 @@
         <button class="exit-mobile-nav">&times;</button>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+          <li lang="en"><a href="#about">About</a></li>
+          <li lang="en"><a href="#products">Products</a></li>
+          <li lang="en"><a href="#contacts">Contacts</a></li>
+          <li lang="it"><a href="#about">Chi siamo</a></li>
+          <li lang="it"><a href="#products">Prodotti</a></li>
+          <li lang="it"><a href="#contacts">Contatti</a></li>
         </ul>
       </div>
 
       <!-- Main sections-->
       <main>
-        <!--Modal Section-->
-        <!-- <div class="overlay"></div>
-        <div class="modal" id="woods">
-          <div class="modal__title">
-            <h2>Wood</h2>
-            <button data-close-button>&times;</button>
-          </div>
-          <div class="modal__img" id="wood__img"></div>
-          <div class="modal__text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quae, culpa vero tempora blanditiis veritatis harum nisi et
-              dolorum officiis provident sint non tempore enim accusantium nam
-              quasi a sequi?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quae, culpa vero tempora blanditiis veritatis harum nisi et
-              dolorum officiis provident sint non tempore enim accusantium nam
-              quasi a sequi?
-            </p>
-          </div>
-          <div class="modal__options">
-            <button id="palissandro">Palissandro Santos</button>
-            <button id="ebano">Ebano Africano</button>
-            <button id="padouk">Padouk</button>
-            <button id="pao">Pao Rosa</button>
-            <button id="amaranto">Amaranto</button>
-            <button id="zebrano">Zebrano</button>
-            <button id="wenge">Wengè</button>
-            <button id="ziricote">Ziricote</button>
-            <button id="palma">Palma</button>
-            <button id="ulivo">Ulivo</button>
-          </div>
-        </div> -->
-        <!-- Mello Modal-->
-        <!-- <div class="modal" id="mello-modal">
-          <div class="modal__title">
-            <h2>Mello</h2>
-            <button data-close-button>&times;</button>
-          </div>
-          <div class="modal__img" id="mello__img"></div>
-          <div class="modal__text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quae, culpa vero tempora blanditiis veritatis harum nisi et
-              dolorum officiis provident sint non tempore enim accusantium nam
-              quasi a sequi?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quae, culpa vero tempora blanditiis veritatis harum nisi et
-              dolorum officiis provident sint non tempore enim accusantium nam
-              quasi a sequi?
-            </p>
-          </div>
-          <div class="modal__options">
-            <button id="brown-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="brown-color"
-                height="25px"
-              />
-            </button>
-            <button id="black-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="black-color"
-                height="25px"
-              />
-            </button>
-            <button id="yellow-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="light-brown-color"
-                height="25px"
-              />
-            </button>
-          </div>
-        </div>
-
-        <!-- Albarra Modal-->
-        <!-- <div class="modal" id="albarra-modal">
-          <div class="modal__title">
-            <h2>Albarra</h2>
-            <button data-close-button>&times;</button>
-          </div>
-          <div class="modal__img" id="mello__img"></div>
-          <div class="modal__text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quae, culpa vero tempora blanditiis veritatis harum nisi et
-              dolorum officiis provident sint non tempore enim accusantium nam
-              quasi a sequi?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quae, culpa vero tempora blanditiis veritatis harum nisi et
-              dolorum officiis provident sint non tempore enim accusantium nam
-              quasi a sequi?
-            </p>
-          </div>
-          <div class="modal__options">
-            <button id="brown-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="brown-color"
-                height="25px"
-              />
-            </button>
-            <button id="black-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="black-color"
-                height="25px"
-              />
-            </button>
-            <button id="yellow-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="light-brown-color"
-                height="25px"
-              />
-            </button>
-          </div>
-        </div> -->
-
-        <!-- Magic Modal-->
-        <!-- <div class="modal" id="magic-modal">
-          <div class="modal__title">
-            <h2>Magic</h2>
-            <button data-close-button>&times;</button>
-          </div>
-          <div class="modal__img" id="mello__img"></div>
-          <div class="modal__text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quae, culpa vero tempora blanditiis veritatis harum nisi et
-              dolorum officiis provident sint non tempore enim accusantium nam
-              quasi a sequi?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quae, culpa vero tempora blanditiis veritatis harum nisi et
-              dolorum officiis provident sint non tempore enim accusantium nam
-              quasi a sequi?
-            </p>
-          </div>
-          <div class="modal__options">
-            <button id="brown-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="brown-color"
-                height="25px"
-              />
-            </button>
-            <button id="black-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="black-color"
-                height="25px"
-              />
-            </button>
-            <button id="yellow-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="light-brown-color"
-                height="25px"
-              />
-            </button>
-          </div>
-        </div> -->
-
-        <!-- Font Modal-->
-        <!-- <div class="modal" id="font-modal">
-          <div class="modal__title">
-            <h2>Font</h2>
-            <button data-close-button>&times;</button>
-          </div>
-          <div class="modal__img" id="mello__img"></div>
-          <div class="modal__text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quae, culpa vero tempora blanditiis veritatis harum nisi et
-              dolorum officiis provident sint non tempore enim accusantium nam
-              quasi a sequi?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quae, culpa vero tempora blanditiis veritatis harum nisi et
-              dolorum officiis provident sint non tempore enim accusantium nam
-              quasi a sequi?
-            </p>
-          </div>
-          <div class="modal__options">
-            <button id="brown-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="brown-color"
-                height="25px"
-              />
-            </button>
-            <button id="black-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="black-color"
-                height="25px"
-              />
-            </button>
-            <button id="yellow-btn">
-              <img
-                src="http://nutbrushes.com/assets/img/nut.svg"
-                alt="light-brown-color"
-                height="25px"
-              />
-            </button>
-          </div>
-        </div> -->
-
         <!-- About section-->
         <section id="about">
           <div class="about__img">
@@ -293,26 +80,46 @@
             />
           </div>
           <div class="section__title">
-            <h2>About</h2>
+            <h2 lang="en">About</h2>
+            <h2 lang="it">Chi Siamo</h2>
           </div>
           <div class="about__text">
-            <p>
+            <p lang="en">
               Nut brushes family was founded by two friends with the shared
               passion for bouldering.
             </p>
-            <p>
+            <p lang="en">
               Our project came to life in 2017 in northern Italy, with the
               precise intention to help to preserve the climbing spots we love
               and learnt to call home.
             </p>
-            <p>
+            <p lang="en">
               Our mission is to deliver the highest quality and most durable
               brushes with a never-ending attention to reduce the environmental
               impact of our manufacturing process and final products.
             </p>
 
-            <p>
+            <p lang="en">
               Marking and materials can be optionally personalized upon request.
+            </p>
+            <p lang="it">
+              La famiglia Nut brushes è stata fondata da due amici con la
+              passione comune per il bouldering.
+            </p>
+            <p lang="it">
+              Il nostro progetto è nato nel 2017 nel nord Italia, con il preciso
+              intento di aiutare a preservare gli spot di arrampicata che amiamo
+              e che abbiamo imparato a chiamare casa.
+            </p>
+            <p lang="it">
+              Il nostro obiettivo è creare spazzole di altissima qualità e
+              durevoli nel tempo cercando di ridurre al minimo l'impatto
+              ambientale del nostro processo di produzione e dei prodotti
+              finali.
+            </p>
+            <p lang="it">
+              Marcatura e materiali possono essere personalizzati opzionalmente
+              su richiesta.
             </p>
 
             <a
@@ -327,20 +134,52 @@
           <div class="section__overlay"></div>
           <div class="text__container">
             <div class="slider">
-              <div id="first">
-                All our brushes are entirely handmade, starting from premium
-                100% boar bristles and a selection of the finest certified wood
-                from all over the world. <br />
+              <div id="first" lang="en">
+                All our brushes are entirely handmade, starting from natural
+                bristles and a selection of the finest certified wood from all
+                over the world. <br />
                 No paint is used, what you see is the natural wood color!.
               </div>
-              <div id="second">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                libero officia ex <br />
-                No paint is used, what you see is the natural wood color!.
+              <div id="second" lang="en">
+                The thin line that separates a climb from a fall... <br />
+                Clean you line means make the difference for completing a
+                sequence. Every wrinkle on the rock could be the key to find
+                your balance. <br />
+                We want to help you with that!
               </div>
-              <div id="third">
-                All our brushes are entirely handmade, starting from premium
-                100% No paint is used, what you see is the natural wood color!.
+              <div id="third" lang="en">
+                <i
+                  >"Take a breath, admiring from below, I remember and imagine
+                  all the movements at the crux, I take a look at all the holds
+                  in the sequence and I brush them, one by one. A slap with my
+                  short to dry them up. I put my shoes on, sitting down on the
+                  pad, I stare at the starting foot on the line, take another
+                  big breath, and the journey starts..."</i
+                >
+              </div>
+              <div id="first-it" class="visible" lang="it">
+                Tutti i nostri pennelli sono interamente realizzati a mano a
+                partire da setole naturali ed una selezione dei migliori legni
+                certificati provenienti da tutto il mondo. <br />
+                Non viene utilizzata alcuna vernice, quello che vedi è il colore
+                naturale del legno.
+              </div>
+              <div id="second-it" lang="it">
+                La linea sottile che separa una salita da una caduta... <br />
+                Pulire significa anche fare la differenza nel completare un
+                movimento. Ogni ruga della roccia può essere la chiave per
+                trovare il tuo equilibrio. <br />
+                Noi cerchiamo di aiutarti in questo!
+              </div>
+              <div id="third-it" lang="it">
+                <i
+                  >"Respiro, la guardo da sotto, ricordo e mimo tutti i
+                  movimenti del passo duro, guardo tutte le prese della sequenza
+                  e poi le spazzolo una ad una, uno schiaffo con la maglietta
+                  per asciugare. Infilo le scarpette, mi siedo sul pad, fisso il
+                  piede di partenza, respiro ancora, chiudo gli occhi e parte il
+                  viaggio..."</i
+                >
               </div>
             </div>
           </div>
@@ -354,7 +193,8 @@
         <!-- Product section-->
         <section id="products" data-load="lazy">
           <div class="section__title products">
-            <h2>Products</h2>
+            <h2 lang="en">Products</h2>
+            <h2 lang="it">Prodotti</h2>
             <!-- <button id="woods__btn">Our woods</button> -->
           </div>
           <div class="product__cards">
@@ -367,69 +207,33 @@
                   /></span>
                 </button> -->
               </div>
-              <!-- <div class="nut__options" id="mello-modal">
-                <button id="mello__blue">
-                  <img
-                    src="./images/nut_colors/blueNut.jpeg"
-                    alt="blue-brush"
-                  />
-                </button>
-                <button id="mello__brown">
-                  <img
-                    src="./images/nut_colors/brownNut.jpeg"
-                    alt="brown-brush"
-                  />
-                </button>
-                <button id="mello__dkGreen">
-                  <img
-                    src="./images/nut_colors/dkGreenNut.jpeg"
-                    alt="dark-green-brush"
-                  />
-                </button>
-                <button id="mello__ltGreen">
-                  <img
-                    src="./images/nut_colors/ltGreenNut.jpeg"
-                    alt="light-gree-brush"
-                  />
-                </button>
-                <button id="mello__orange">
-                  <img
-                    src="./images/nut_colors/orangeNut.jpeg"
-                    alt="orange-brush"
-                  />
-                </button>
-                <button id="mello__purple">
-                  <img
-                    src="./images/nut_colors/purpleNut.jpeg"
-                    alt="purple-brush"
-                  />
-                </button>
-                <button id="mello__dkOrange">
-                  <img
-                    src="./images/nut_colors/dkOrangeNut.jpeg"
-                    alt="dark-orange-brush"
-                  />
-                </button>
-                <button id="mello__red">
-                  <img src="./images/nut_colors/redNut.jpeg" alt="red-brush" />
-                </button>
-              </div> -->
 
-              <p>
-                Our first model! ergonomic and balanced, ideal for small chalk
+              <p lang="en">
+                Our first model! Ergonomic and balanced, ideal for small chalk
                 bags
+              </p>
+              <p lang="it">
+                Il nostro primo modello! Ergonomico ed equilibrato, ideale per
+                piccoli porta magnesite
               </p>
               <div class="card__img">
                 <img
                   id="mello__img"
                   src="./images/mello_colors/melloBrush.jpeg"
                   alt="mello-brush"
+                  loading="lazy"
                 />
               </div>
 
-              <p>
+              <p lang="en">
                 <strong>brush length:</strong> 180mm <br /><strong
                   >boar bristles:</strong
+                >
+                9x60mm
+              </p>
+              <p lang="it">
+                <strong>Lunghezza spazzola:</strong> 180mm <br /><strong
+                  >Setole di cinghiale:</strong
                 >
                 9x60mm
               </p>
@@ -443,67 +247,34 @@
                   /></span>
                 </button> -->
               </div>
-              <!-- <div class="nut__options" id="albarra-modal">
-                <button id="albarra__blue">
-                  <img
-                    src="./images/nut_colors/blueNut.jpeg"
-                    alt="blue-brush"
-                  />
-                </button>
-                <button id="albarra__brown">
-                  <img
-                    src="./images/nut_colors/brownNut.jpeg"
-                    alt="brown-brush"
-                  />
-                </button>
-                <button id="albarra__dkGreen">
-                  <img
-                    src="./images/nut_colors/dkGreenNut.jpeg"
-                    alt="dark-green-brush"
-                  />
-                </button>
-                <button id="albarra__ltGreen">
-                  <img
-                    src="./images/nut_colors/ltGreenNut.jpeg"
-                    alt="light-gree-brush"
-                  />
-                </button>
-                <button id="albarra__orange">
-                  <img
-                    src="./images/nut_colors/orangeNut.jpeg"
-                    alt="orange-brush"
-                  />
-                </button>
-                <button id="albarra__purple">
-                  <img
-                    src="./images/nut_colors/purpleNut.jpeg"
-                    alt="purple-brush"
-                  />
-                </button>
-                <button id="albarra__dkOrange">
-                  <img
-                    src="./images/nut_colors/dkOrangeNut.jpeg"
-                    alt="dark-orange-brush"
-                  />
-                </button>
-                <button id="albarra__red">
-                  <img src="./images/nut_colors/redNut.jpeg" alt="red-brush" />
-                </button>
-              </div> -->
 
-              <p>
-                our first model! ergonomic and balanced, ideal for small chalk
-                bags
+              <p lang="en">
+                Funky shapes and increased handle length, not forgetting style
+              </p>
+              <p lang="it">
+                Forme funky e maggiore lunghezza del manico, senza dimenticare
+                lo stile
               </p>
               <div class="card__img">
                 <img
                   id="albarra__img"
                   src="./images/albarra_colors/albarraBrush.jpeg"
                   alt="albarra-brush"
+                  loading="lazy"
                 />
               </div>
-
-              <p>brush length: 180mm <br />boar bristles: 9x60mm</p>
+              <p lang="en">
+                <strong>brush length:</strong> 230mm <br /><strong
+                  >boar bristles:</strong
+                >
+                9x60mm
+              </p>
+              <p lang="it">
+                <strong>Lunghezza spazzola:</strong> 230mm <br /><strong
+                  >Setole di cinghiale:</strong
+                >
+                9x60mm
+              </p>
             </div>
             <div class="product__card">
               <div class="card__title">
@@ -514,67 +285,36 @@
                   /></span>
                 </button> -->
               </div>
-              <!-- <div class="nut__options" id="magic-modal">
-                <button id="albarra__blue">
-                  <img
-                    src="./images/nut_colors/blueNut.jpeg"
-                    alt="blue-brush"
-                  />
-                </button>
-                <button id="albarra__brown">
-                  <img
-                    src="./images/nut_colors/brownNut.jpeg"
-                    alt="brown-brush"
-                  />
-                </button>
-                <button id="albarra__dkGreen">
-                  <img
-                    src="./images/nut_colors/dkGreenNut.jpeg"
-                    alt="dark-green-brush"
-                  />
-                </button>
-                <button id="albarra__ltGreen">
-                  <img
-                    src="./images/nut_colors/ltGreenNut.jpeg"
-                    alt="light-gree-brush"
-                  />
-                </button>
-                <button id="albarra__orange">
-                  <img
-                    src="./images/nut_colors/orangeNut.jpeg"
-                    alt="orange-brush"
-                  />
-                </button>
-                <button id="albarra__purple">
-                  <img
-                    src="./images/nut_colors/purpleNut.jpeg"
-                    alt="purple-brush"
-                  />
-                </button>
-                <button id="albarra__dkOrange">
-                  <img
-                    src="./images/nut_colors/dkOrangeNut.jpeg"
-                    alt="dark-orange-brush"
-                  />
-                </button>
-                <button id="albarra__red">
-                  <img src="./images/nut_colors/redNut.jpeg" alt="red-brush" />
-                </button>
-              </div> -->
 
-              <p>
-                our first model! ergonomic and balanced, ideal for small chalk
-                bags
+              <p lang="it">
+                Setole più sottili, studiate per pulire anche le più piccole
+                rughe e tacche
+              </p>
+              <p lang="en">
+                Thinner bristles, designed to clean even the smallest crimps and
+                cracks
               </p>
               <div class="card__img">
                 <img
                   id="magic__img"
                   src="./images/magic_colors/magicBrush.jpeg"
                   alt="magic-brush"
+                  loading="lazy"
                 />
               </div>
 
-              <p>brush length: 180mm <br />boar bristles: 9x60mm</p>
+              <p lang="en">
+                <strong>brush length:</strong> 150mm <br /><strong
+                  >boar bristles:</strong
+                >
+                9x40mm
+              </p>
+              <p lang="it">
+                <strong>Lunghezza spazzola:</strong> 150mm <br /><strong
+                  >Setole di cinghiale:</strong
+                >
+                9x40mm
+              </p>
             </div>
             <div class="product__card">
               <div class="card__title">
@@ -640,26 +380,41 @@
                 </button>
               </div> -->
 
-              <p>
-                our first model! ergonomic and balanced, ideal for small chalk
-                bags
+              <p lang="en">
+                Size matters! best choice for brushing slopers and gym volumes
+              </p>
+              <p lang="it">
+                La misura è importante! la scelta migliore per spazzolare le
+                svase e i volumi della palestra
               </p>
               <div class="card__img">
                 <img
                   id="font__img"
                   src="./images/font_colors/fontBrush.jpeg"
                   alt="font-brush"
+                  loading="lazy"
                 />
               </div>
 
-              <p>brush length: 180mm <br />boar bristles: 9x60mm</p>
+              <p lang="en">
+                <strong>brush length:</strong> 250mm <br /><strong
+                  >boar bristles:</strong
+                >
+                25x60mm
+              </p>
+              <p lang="it">
+                <strong>Lunghezza spazzola:</strong> 250mm <br /><strong
+                  >Setole di cinghiale:</strong
+                >
+                25x60mm
+              </p>
             </div>
           </div>
         </section>
-        <section class="section__sponsor" data-load="lazy">
+        <!-- <section class="section__sponsor" data-load="lazy">
           <div class="sponsor__title">
             <h2>NutBrushers</h2>
-            <!-- <span>a.k.a NutBrusher</span> -->
+             <span>a.k.a NutBrusher</span>
           </div>
 
           <div class="sponsor__text">
@@ -759,17 +514,17 @@
                       <div class="sponsor__activity">
                         <p>Lead</p>
                         <p>World Champion</p>
-                        <!-- <progress value="80" max="100"></progress> -->
+                         <progress value="80" max="100"></progress> 
                       </div>
                       <div class="sponsor__activity">
                         <p>Boulder</p>
-                        <!-- <progress value="75" max="100"></progress> -->
+                         <progress value="75" max="100"></progress> 
                         <p>World Champion</p>
                       </div>
                       <div class="sponsor__activity">
                         <p>Rock Climbing</p>
                         <p>9A+ Grandi Gesti</p>
-                        <!-- <progress value="90" max="100"></progress> -->
+                        <progress value="90" max="100"></progress> 
                       </div>
                     </div>
                     <div class="sponsor__social">
@@ -979,17 +734,17 @@
                       <div class="sponsor__activity">
                         <p>Lead</p>
                         <p>World Champion</p>
-                        <!-- <progress value="80" max="100"></progress> -->
+                         <progress value="80" max="100"></progress> 
                       </div>
                       <div class="sponsor__activity">
                         <p>Boulder</p>
-                        <!-- <progress value="75" max="100"></progress> -->
+                         <progress value="75" max="100"></progress> 
                         <p>World Champion</p>
                       </div>
                       <div class="sponsor__activity">
                         <p>Rock Climbing</p>
                         <p>9A+ Grandi Gesti</p>
-                        <!-- <progress value="90" max="100"></progress> -->
+                         <progress value="90" max="100"></progress>
                       </div>
                     </div>
                     <div class="sponsor__social">
@@ -1052,19 +807,163 @@
           <button id="nextBtn">
             <img src="./images/caret-right-fill.svg" alt="go-right" />
           </button>
+        </section> -->
+
+        <!-- Carousel Section -->
+        <section id="wallpaper" data-load="lazy">
+          <div class="wallpaper__title">
+            <h2>Wallpaper</h2>
+          </div>
+          <div class="wallpaper__header">
+            <p lang="en">
+              Tag us on
+              <a href="https://www.instagram.com/nutbrushes/?hl=en"
+                >Instagram</a
+              >
+              or
+              <a href="https://www.facebook.com/nutbrushes/">Facebook</a> with
+              your best Nutbrushes' pictures and we can feature it here. Let's
+              make the Nutbrushes community grow and share every adventure on
+              the rock!
+            </p>
+            <p lang="it">
+              Taggaci su
+              <a href="https://www.instagram.com/nutbrushes/?hl=en"
+                >Instagram</a
+              >
+              o <a href="https://www.facebook.com/nutbrushes/">Facebook</a> con
+              le tue migliori foto di Nutbrushes e le possiamo inserire qui.
+              Aiutaci a far crescere la community di Nutbrushes e condividere
+              ogni avventura sulla roccia!
+            </p>
+          </div>
+          <div class="poster__container">
+            <div class="poster__flex">
+              <div class="col-1">
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211215-WA0010.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0001.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0002.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0003.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0004.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0005.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0006.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0007.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0008.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0009.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0010.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="poster">
+                  <img
+                    src="./images/wallpaper/IMG-20211218-WA0011.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!--Contacts section-->
         <section id="contacts" data-load="lazy">
           <div class="section__title">
-            <h2>Contacts</h2>
+            <h2 lang="en">Contacts</h2>
+            <h2 lang="it">Contatti</h2>
           </div>
           <div class="contact__info">
             <ul>
-              <li>email: <a href="">info@nutbrushes.com</a></li>
+              <li>Email: <a>info@nutbrushes.com</a></li>
             </ul>
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <textarea
+                name="message-content"
+                id="message-content"
+                maxlength="2500"
+                cols="18"
+                rows="10"
+              ></textarea>
+              <button class="btn" lang="en">Send</button>
+              <button class="btn" lang="it">Invia</button>
+            </form>
             <div class="social__contacts">
-              <h4><strong>Follow Us</strong></h4>
+              <h4 lang="en"><strong>Follow Us</strong></h4>
+              <h4 lang="it"><strong>Seguici</strong></h4>
               <a href="https://www.facebook.com/nutbrushes/"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1105,27 +1004,31 @@
         </section> -->
         <section class="section__shopping">
           <div class="shopping__container">
-            <a href="https://www.oliunid.it/" target="_blank"
-              ><img
-                src="https://media.oliunid.it/media/logo/default/logo.svg"
-                alt="oliunid-italia"
-            /></a>
             <a href="http://www.sofaboulder.com/" target="_blank"
-              ><img src="images/ albarra.png" alt="sofa-boulder-albarracin"
-            /></a>
+              ><img src="images/ albarra.png" alt="sofa-boulder-albarracin" />
+              <div class="shopping__country">ESP</div></a
+            >
             <a href="https://www.purplecouchproject.com/" target="_blank"
-              ><img src="images/pcpJapan.png" alt="purple-couch-project-japan"
-            /></a>
+              ><img
+                src="images/pcpJapan.png"
+                alt="purple-couch-project-japan"
+              />
+              <div class="shopping__country">JAP</div></a
+            >
           </div>
         </section>
 
         <!--Footer section-->
         <section class="footer">
           <div class="footer__overlay"></div>
-          <p>
+          <p lang="en">
             All our products are handmade with passion by climbers, for climbers
           </p>
-          <h4>See you at the crag!</h4>
+          <h4 lang="en">See you at the crag!</h4>
+          <p lang="it">
+            Tutti i nostri prodotti sono realizzati da climbers per climbers.
+          </p>
+          <h4 lang="it">Ci vediamo sulla roccia!</h4>
           <a
             href="https://www.instagram.com/explore/tags/cleanyourline/"
             class="clean-your-line"
@@ -1135,7 +1038,6 @@
         </section>
       </main>
     </div>
-
     <script src="app.js"></script>
   </body>
 </html>
